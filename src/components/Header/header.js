@@ -11,26 +11,8 @@ import {NavLink} from "react-router-dom";
 const Header = () => {
 
     // const [search, setIsOpen] = useState('')
-    const [search, setSearch] = useState(false)
-    //
-    // const inputRef = useRef<HTMLInputElement>null;
-    //
-    // const handleClick = () => {
-    //     if(!isOpen) {
-    //         inputRef.current?.focus();
-    //     }
-    //     setIsOpen(!Boolean(isOpen) ? "open" : "");
-    // };
-    //
-    // const handleChange = e =>
-    //     setSearch(e.target.value);
-    //
-    // const filteredCars = cars.filter(
-    //     car =>
-    //         search.length &&
-    //         car.name.toLowerCase()
-    //             .includes(search.toLowerCase())
-    // );
+    const [search, setSearch] = useState(true)
+
 
     return (
         <header id="header">
@@ -58,7 +40,15 @@ const Header = () => {
                     </nav>
 
                     <nav className="header--icons">
-                        <FiSearch className="header--icons__search"/>
+                        <div style={{
+                            background: search? 'transparent': ''
+                        }} className='header--icons__search'>
+                            <FiSearch onClick={()=> setSearch(!search)} className="header--icons__search--icon"/>
+                            <input style={{
+                                width: search? '' : '120px'
+                            }} text="text"/>
+                        </div>
+
                         <NavLink to={'/basket'}>
                             <BiShoppingBag className="header--icons__basket"/>
                         </NavLink>

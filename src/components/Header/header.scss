@@ -46,13 +46,34 @@
 
     &--icons {
       display: flex;
-      padding: 0 70px;
+      justify-content: end;
+      align-items: center;
+      width: 190px;
       color: black;
       //font-size: 26px;
 
       &__search {
-        padding: 0 20px;
-        font-size: 26px;
+        margin-right: 10px;
+        height: 35px;
+        background: #cec8c8;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        transition: .5s;
+        input{
+          width: 0;
+          height: 35px;
+          border: none;
+          outline: none;
+          background: transparent;
+          margin-left: 10px;
+          transition: .5s;
+          color: white;
+        }
+        &--icon{
+          font-size: 24px;
+          margin-left: 5px;
+        }
       }
 
       &__basket {
@@ -91,9 +112,6 @@
         display: flex;
         align-items: center;
 
-        &__search {
-          font-size: 24px;
-        }
 
         &__basket {
           padding-top: 2px;

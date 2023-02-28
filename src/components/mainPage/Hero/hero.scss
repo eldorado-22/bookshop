@@ -1,0 +1,140 @@
+#hero{
+  padding-top: 120px;
+  .fon{
+    background: url("../../../components/Main image.png") no-repeat center/cover;
+    min-height: 80vh;
+    width: 100%;
+    .hero{
+      padding-top: 220px;
+      h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+      }
+      p{
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        color: #19272E;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1140px) {
+
+}
+@media (max-width: 1024px) {
+  #hero {
+    .fon{
+      .hero{
+        h1 {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  #hero {
+    .fon{
+      .hero{
+        h1 {
+          font-size: 40px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    .fon{
+      .hero{
+        h1 {
+          font-size: 35px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  #hero {
+    .fon{
+      min-height: 58vh;
+      .hero{
+        padding-top: 155px;
+        h1 {
+          font-size: 28px;
+        }
+        p{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 451px) {
+  #hero {
+    .fon{
+      min-height: 45vh;
+      .hero{
+        padding-top: 120px;
+        h1 {
+          font-size: 23px;
+        }
+        p{
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  #hero {
+    .fon{
+      .hero{
+        h1 {
+          font-size: 20px;
+        }
+        p{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+
+}
+@media (max-width: 320px) {
+  #hero {
+    .fon{
+      min-height: 35vh;
+      .hero{
+        padding-top: 90px;
+        h1 {
+          font-size: 16px;
+        }
+        p{
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}

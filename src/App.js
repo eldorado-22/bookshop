@@ -15,11 +15,12 @@ function App() {
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/categories' element={<Categories/>}/>
                 <Route path='/books' element={<Books/>}/>
-                <Route path='/about' element={<About/>}/>
+                {/*<Route path='/about' element={<About/>}/>*/}
                 <Route path='/basket' element={<Basket/>}/>
                 <Route path='/detail-page/:id' element={<DetailPage/>}/>
             </Routes>
             <Recent/>
+            <About/>
         </>
     );
 }

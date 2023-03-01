@@ -14,12 +14,12 @@ function App() {
             <Routes>
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/categories' element={<Categories/>}/>
-                <Route path='/recent' element={<Recent/>}/>
                 <Route path='/books' element={<Books/>}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/basket' element={<Basket/>}/>
                 <Route path='/detail-page/:id' element={<DetailPage/>}/>
             </Routes>
+            <Recent/>
         </>
     );
 }

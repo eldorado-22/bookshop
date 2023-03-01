@@ -1,15 +1,13 @@
 #footer {
-
   width: 100%;
-  padding: 80px 0;
-
-
   background: #818EEA;
-
+  padding: 50px 0;
   .footer {
     display: flex;
     //align-items: center;/
     justify-content: space-between;
+    flex-wrap: wrap;
+    //padding: 60px 0;
 
     &--sign-up {
       margin: 0 -30px;
@@ -26,9 +24,10 @@
         align-items: center;
         position: relative;
         margin: 30px 0;
+        width: 96%;
 
         input {
-          width: 95%;
+          width: 96%;
           height: 40px;
           color: #fff;
           padding: 0 10px;
@@ -42,14 +41,14 @@
           color: #e0d9d9;
         }
 
-        &--exit{
-            position: absolute;
-            //top: 10px;
-            left: 79%;
-            font-weight: 500;
-            font-size: 20px;
-            color: #fff;
-          }
+        &--exit {
+          position: absolute;
+          top: -10px;
+          left: 75%;
+          font-weight: 500;
+          font-size: 20px;
+          color: #fff;
+        }
 
       }
 
@@ -60,7 +59,7 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 16px;
         display: flex;
         align-items: center;
@@ -69,51 +68,51 @@
       }
     }
 
-    &--home {
-      display: flex;
-      align-items: start;
-      flex-direction: column;
-      margin: 0 10px;
-
-      h5 {
-        font-weight: 600;
-        font-size: 16px;
-        color: #FFFFFF;
-        letter-spacing: 2px;
-      }
-
-      a {
-        font-weight: 400;
-        font-size: 16px;
-        color: #e0d9d9;
-        padding: 6px 0;
-
-      }
-    }
-
-    &--categories {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin: 0 10px;
-
-
-      h5 {
-        font-weight: 600;
-        font-size: 16px;
-        color: #fff;
-        letter-spacing: 0.5px;
-      }
-
-      a {
-        font-weight: 400;
-        font-size: 16px;
-        color: #e0d9d9;
-        padding: 6px 0;
-
-      }
-    }
-
+    //&--home {
+    //  display: flex;
+    //  align-items: start;
+    //  flex-direction: column;
+    //  margin: 0 10px;
+    //
+    //  h5 {
+    //    font-weight: 600;
+    //    font-size: 18px;
+    //    color: #FFFFFF;
+    //    letter-spacing: 2px;
+    //    text-align: center;
+    //  }
+    //
+    //  a {
+    //    font-weight: 400;
+    //    font-size: 16px;
+    //    color: #e0d9d9;
+    //    padding: 6px 0;
+    //
+    //  }
+    //}
+    //
+    //&--categories {
+    //  display: flex;
+    //  align-items: center;
+    //  flex-direction: column;
+    //  margin: 0 10px;
+    //
+    //
+    //  h5 {
+    //    font-weight: 600;
+    //    font-size: 18px;
+    //    color: #fff;
+    //    letter-spacing: 0.5px;
+    //  }
+    //
+    //  a {
+    //    font-weight: 400;
+    //    font-size: 16px;
+    //    color: #e0d9d9;
+    //    padding: 6px 0;
+    //
+    //  }
+    //}
 
     &--contact {
       display: flex;
@@ -122,9 +121,10 @@
 
       h5 {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 24px;
         color: #FFFFFF;
         text-align: center;
+        padding: 0 0 0  -10px;
         //letter-spacing: -0.4px;
       }
 
@@ -136,24 +136,34 @@
         &--phone {
           display: flex;
           align-items: center;
-          padding: 7px 0;
           color: #FFFFFF;
 
-          &__icon {
-            font-weight: 600;
+          &__tel {
+            border-radius: 50%;
+            background: #000;
             font-size: 30px;
-            color: #FFFFFF;
+            padding: 6px 6px;
+            margin: 0 10px;
+
           }
         }
 
+
         &--email {
           color: #FFFFFF;
-          padding: 8px 0;
+          padding:  10px 0;
           display: flex;
           align-items: center;
+
+          &__gmail {
+            border-radius: 50%;
+            background: #000;
+            font-size: 30px;
+            padding: 7px 7px;
+            margin: 0 10px;
+          }
         }
       }
-
 
       &__social {
         display: flex;
@@ -161,46 +171,52 @@
         justify-content: center;
 
         &--instagram {
-          margin: 0 10px;
+          margin: 0 15px;
           background: #fff;
           border-radius: 30%;
-          width: 33px;
-          height: 33px;
+          width: 35px;
+          height: 35px;
           font-weight: 400;
-          font-size: 33px;
+          font-size: 35px;
           text-align: center;
           color: #c92626;
+
+          &__icon {
+            padding-bottom: 40px;
+          }
         }
 
         &--facebook {
           font-weight: 400;
-          font-size: 35px;
+          font-size: 40px;
           color: #073fa4;
-          margin: 0 20px;
+          margin: 0 40px;
           border-radius: 50%;
           background: #FFFFFF;
-          width: 35px;
-          height: 35px;
+          width: 40px;
+          height: 40px;
+
+          &__icon {
+            padding-bottom: 37px;
+          }
         }
 
 
         &--twitter {
 
           &__icon {
-            padding: 5px 4px;
+            padding: 5px 5px;
           }
-
           margin: 0 10px;
           background: #0d67be;
           border-radius: 50%;
-          width: 40px;
+          width: 45px;
           text-align: center;
-          height: 40px;
+          height: 45px;
           font-weight: 400;
-          font-size: 28px;
+          font-size: 33px;
           color: #fff;
         }
-
       }
 
     }
@@ -211,26 +227,27 @@
       flex-direction: column;
       padding: 4px 0;
 
+
       h2 {
-        font-weight: 500;
-        font-size: 18px;
+        font-weight: 600;
+        font-size: 24px;
         font-family: 'Poppins', sans-serif;
         color: #FFFFFF;
+        padding: 10px 0;
         //letter-spacing: -0.4px;
       }
 
       p {
-        padding: 10px 0;
-        font-weight: 400;
-        font-size: 16px;
+        font-weight: 500;
+        font-size: 18px;
         color: #FFFFFF;
 
       }
 
       &__map {
-        padding: 10px 0;
-        font-weight: 400;
-        font-size: 16px;
+        //padding: 10px 0;
+        font-weight: 550;
+        font-size: 20px;
         color: #FFFFFF;
 
         &__location {
@@ -243,4 +260,733 @@
 
   }
 
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+
+    &__genres {
+
+      &--like {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 400;
+      }
+    }
+
+    &__newB {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &--news {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 400;
+      }
+    }
+
+    &__books {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &--book {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 400;
+      }
+    }
+
+    &__about {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &--prof {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 400;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1600px) {
+  #footer {
+    .burger-menu {
+      display: none;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  #footer {
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+
+      &--sign-up {
+        width: 40%;
+
+        h5 {
+          font-size: 26px;
+        }
+
+        &__input {
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin: 30px 0;
+          width: 89%;
+
+          input {
+            width: 85%;
+            height: 40px;
+            color: #fff;
+            padding: 0 10px;
+            border: 0.5px solid #FFFFFF;
+            border-radius: 8px;
+            background: transparent;
+            outline: none;
+          }
+
+
+          &--exit {
+            position: absolute;
+            //top: 10px;
+            left: 70%;
+            font-weight: 500;
+            font-size: 20px;
+            color: #fff;
+          }
+
+        }
+
+      }
+
+      &--address {
+
+        padding: 4px 0;
+        margin: 0 -20px;
+
+        h2 {
+          font-size: 17px;
+          //letter-spacing: -0.4px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+
+        &__map {
+          padding: 5px 0;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+
+
+      }
+
+      &--contact {
+
+        h5 {
+          font-weight: 600;
+          font-size: 17px;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 0 0 0  -10px;
+          //letter-spacing: -0.4px;
+        }
+
+        &__ema-group {
+          display: flex;
+          flex-direction: column;
+          padding: 6px 0;
+
+          &--phone {
+            padding: 7px 15px;
+            font-size: 17px;
+          }
+
+          &--email {
+            padding: 8px 0;
+            font-size: 17px;
+          }
+        }
+
+
+        &__social {
+
+          &--instagram {
+            border-radius: 30%;
+            width: 28px;
+            height: 28px;
+            font-size: 28px;
+          }
+
+          &--facebook {
+            font-size: 30px;
+            color: #073fa4;
+            //margin: 0 25px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            width: 30px;
+            height: 30px;
+          }
+
+
+          &--twitter {
+
+            &__icon {
+              padding: 5px 1px;
+            }
+
+            margin: 0 10px;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 26px;
+          }
+
+        }
+
+      }
+    }
+
+
+  }
+}
+
+@media (max-width: 1024px) {
+  #footer {
+    .footer {
+
+      &--sign-up {
+        width: 40%;
+
+        h5 {
+          font-size: 26px;
+        }
+
+        &__input {
+          margin: 30px 0;
+          width: 89%;
+
+          input {
+            width: 85%;
+            height: 40px;
+            padding: 0 10px;
+          }
+
+
+          &--exit {
+            left: 70%;
+            font-size: 20px;
+          }
+
+        }
+
+      }
+
+      &--address {
+
+        padding: 4px 0;
+        margin: 0 -20px;
+
+        h2 {
+          font-size: 17px;
+          //letter-spacing: -0.4px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+
+        &__map {
+          padding: 5px 0;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+
+
+      }
+
+      &--contact {
+
+        h5 {
+          font-size: 17px;
+          padding: 0 0 0  -10px;
+          //letter-spacing: -0.4px;
+        }
+
+        &__ema-group {
+          display: flex;
+          flex-direction: column;
+          padding: 6px 0;
+
+          &--phone {
+            padding: 7px 15px;
+            font-size: 17px;
+          }
+
+          &--email {
+            padding: 8px 0;
+            font-size: 17px;
+          }
+        }
+
+
+        &__social {
+
+          &--instagram {
+            border-radius: 30%;
+            width: 28px;
+            height: 28px;
+            font-size: 28px;
+          }
+
+          &--facebook {
+            font-size: 30px;
+            color: #073fa4;
+            //margin: 0 25px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            width: 30px;
+            height: 30px;
+          }
+
+
+          &--twitter {
+
+            &__icon {
+              padding: 5px 1px;
+            }
+
+            margin: 0 10px;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 26px;
+          }
+
+        }
+
+      }
+    }
+    .burger-menu {
+      display: block;
+
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #footer {
+    .footer {
+
+      &--sign-up {
+        width: 40%;
+
+        h5 {
+          font-size: 24px;
+        }
+
+        &__input {
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin: 30px 0;
+          width: 89%;
+
+          input {
+            width: 85%;
+            height: 40px;
+            color: #fff;
+            padding: 0 10px;
+            border: 0.5px solid #FFFFFF;
+            border-radius: 8px;
+            background: transparent;
+            outline: none;
+          }
+
+
+          &--exit {
+            position: absolute;
+            //top: 10px;
+            left: 70%;
+            font-weight: 500;
+            font-size: 20px;
+            color: #fff;
+          }
+
+        }
+
+      }
+
+      &--address {
+
+
+        h2 {
+          font-size: 16px;
+          //letter-spacing: -0.4px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        &__map {
+          padding: 5px 0;
+          font-size: 15px;
+        }
+      }
+
+      &--contact {
+
+        h5 {
+          font-weight: 600;
+          font-size: 17px;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 0 0 0  -10px;
+          //letter-spacing: -0.4px;
+        }
+
+        &__ema-group {
+          display: flex;
+          flex-direction: column;
+          padding: 6px 0;
+
+          &--phone {
+            padding: 7px 15px;
+            font-size: 15px;
+          }
+
+          &--email {
+            padding: 8px 0;
+            font-size: 15px;
+          }
+        }
+
+
+        &__social {
+
+          &--instagram {
+            border-radius: 30%;
+            width: 28px;
+            height: 28px;
+            font-size: 28px;
+          }
+
+          &--facebook {
+            font-size: 30px;
+            color: #073fa4;
+            //margin: 0 25px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            width: 30px;
+            height: 30px;
+          }
+
+
+          &--twitter {
+
+            &__icon {
+              padding: 5px 1px;
+            }
+
+            margin: 0 10px;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            font-size: 24px;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  #footer {
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+
+      &--sign-up {
+        h5 {
+          font-size: 19px;
+          margin: 0 6px;
+        }
+
+        &__input {
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin: 30px 6px;
+
+          input {
+            width: 85%;
+            height: 40px;
+            color: #fff;
+            padding: 0 10px;
+            border: 0.5px solid #FFFFFF;
+            border-radius: 8px;
+            background: transparent;
+            outline: none;
+          }
+
+
+          &--exit {
+            position: absolute;
+            //top: 10px;
+            left: 70%;
+            font-weight: 500;
+            font-size: 20px;
+            color: #fff;
+          }
+
+        }
+
+      }
+
+      &--address {
+        h2 {
+          font-weight: 500;
+          font-size: 16px;
+          color: #FFFFFF;
+          //letter-spacing: -0.4px;
+        }
+
+        p {
+          font-size: 13px;
+          padding: 10px 0;
+        }
+
+        &__map {
+          padding: 8px 0;
+          font-size: 14px;
+          color: #FFFFFF;
+
+          &--location {
+            display: none
+          }
+        }
+      }
+
+      &--contact {
+
+        h5 {
+          font-size: 16px;
+          padding: 0 0 0  -10px;
+        }
+
+        &__ema-group {
+          display: flex;
+          flex-direction: column;
+          padding: 6px 0;
+
+          &--phone {
+            padding: 7px 15px;
+            font-size: 14px;
+          }
+
+          &--email {
+            padding: 8px 0;
+            font-size: 14px;
+            letter-spacing: 0.2px;
+          }
+        }
+
+
+        &__social {
+
+          &--instagram {
+            border-radius: 30%;
+            width: 24px;
+            height: 24px;
+            font-size: 24px;
+          }
+
+          &--facebook {
+            font-size: 28px;
+            color: #073fa4;
+            border-radius: 50%;
+            background: #FFFFFF;
+            width: 28px;
+            height: 28px;
+          }
+
+
+          &--twitter {
+
+            &__icon {
+              padding: 5px 1px;
+            }
+
+            margin: 0 10px;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            font-size: 22px;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #footer {
+    .footer {
+      &--sign-up {
+        h5 {
+          font-size: 15px;
+        }
+
+        &__input {
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin: 30px 6px;
+
+          input {
+            width: 80%;
+            height: 40px;
+            color: #fff;
+            padding: 0 10px;
+            border: 0.5px solid #FFFFFF;
+            border-radius: 8px;
+            background: transparent;
+            outline: none;
+          }
+
+
+          &--exit {
+            position: absolute;
+            //top: 10px;
+            left: 60%;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+          }
+
+        }
+
+      }
+
+      &--address {
+        h2 {
+          font-size: 18px;
+          //letter-spacing: -0.4px;
+        }
+
+        p {
+          font-size: 16px;
+          padding: 10px 0;
+        }
+
+        &__map {
+          display: flex;
+          align-items: center;
+          padding: 8px 0;
+          font-size: 16px;
+          color: #FFFFFF;
+
+          &--location {
+            display: block;
+          }
+        }
+      }
+
+      &--contact {
+
+        h5 {
+          font-size: 17px;
+          padding: 0 0 0  -10px;
+        }
+
+        &__ema-group {
+          display: flex;
+          flex-direction: column;
+          padding: 6px 0;
+
+          &--phone {
+            padding: 7px 15px;
+            font-size: 15px;
+          }
+
+          &--email {
+            padding: 8px 0;
+            font-size: 15px;
+            letter-spacing: 0.2px;
+          }
+        }
+
+
+        &__social {
+
+          &--instagram {
+            border-radius: 30%;
+            width: 25px;
+            height: 25px;
+            font-size: 25px;
+          }
+
+          &--facebook {
+            font-size: 29px;
+            color: #073fa4;
+            border-radius: 50%;
+            background: #FFFFFF;
+            width: 29px;
+            height: 29px;
+          }
+
+
+          &--twitter {
+
+            &__icon {
+              padding: 5px 1px;
+            }
+
+            margin: 0 10px;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            font-size: 22px;
+          }
+
+        }
+
+      }
+    }
+  }
 }

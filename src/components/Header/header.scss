@@ -4,7 +4,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   padding: 4px 0;
-
+  background: #fff;
 
   .header {
     display: flex;
@@ -55,11 +55,12 @@
       &__search {
         margin-right: 10px;
         height: 35px;
-        background: #cec8c8;
+        background: #e8e5e5;
         display: flex;
         align-items: center;
         border-radius: 10px;
         transition: .5s;
+
         input{
           width: 0;
           height: 35px;
@@ -68,7 +69,7 @@
           background: transparent;
           margin-left: 10px;
           transition: .5s;
-          color: white;
+          color: #807b7b;
         }
         &--icon{
           font-size: 24px;

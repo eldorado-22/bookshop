@@ -1,16 +1,18 @@
-#books{
-  .books{
+#genres{
+  .genres{
+    padding-top: 5rem;
     .up{
       display: flex;
       justify-content: space-between;
-      padding-top: 5rem;
       a{
-        display: flex;
         align-items: flex-end;
+        display: flex;
       }
     }
     .down{
       display: flex;
+      justify-content: space-between;
+      padding-top: 5rem;
     }
   }
 }

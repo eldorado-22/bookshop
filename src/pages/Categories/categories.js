@@ -2,8 +2,12 @@ import React from 'react';
 import './categories.scss';
 const Categories = () => {
     return (
-        <div>
-
+        <div id='categories'>
+            <div className="container">
+                <div className="categories">
+                    <h1>hellogfdfsdbdf</h1>
+                </div>
+            </div>
         </div>
     );
 };

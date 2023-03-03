@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 import Slider from 'react-slick'
 import axios from "axios";
 
-let settings = {
+const settings = {
     dots: true,
     infinite: false,
     speed: 500,

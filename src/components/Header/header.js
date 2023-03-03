@@ -24,7 +24,7 @@ const Header = () => {
                             <h1>Bookshop</h1>
                         </NavLink>
                         <nav className="header--nav__col">
-                            <NavLink to={'/categories'}>
+                            <NavLink to={'categories'}>
                                 <a href="#">Categories</a>
                             </NavLink>
                             <NavLink to={'recent'}>

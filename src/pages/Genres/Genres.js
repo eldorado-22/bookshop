@@ -25,6 +25,14 @@ const Genres = () => {
                         <NavLink to={'/'}><img src={category5} alt="img"/></NavLink>
                         <NavLink to={'/'}><img src={category6} alt="img"/></NavLink>
                     </div>
+                    <div className="down-mob">
+                        <NavLink to={'/'}><img src={category1} alt="img"/></NavLink>
+                        <NavLink to={'/'}><img src={category2} alt="img"/></NavLink>
+                        <NavLink to={'/'}><img src={category3} alt="img"/></NavLink>
+                        <NavLink to={'/'}><img src={category4} alt="img"/></NavLink>
+                        <NavLink to={'/'}><img src={category5} alt="img"/></NavLink>
+                        <NavLink to={'/'}><img src={category6} alt="img"/></NavLink>
+                    </div>
                 </div>
             </div>
         </div>

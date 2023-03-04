@@ -1,13 +1,14 @@
 #footer {
   width: 100%;
   background: #818EEA;
-  padding: 50px 0;
+  padding: 60px 0;
 
 
   .footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px 0;
 
     &--sign-up {
       margin: 0 -30px;
@@ -63,7 +64,7 @@
         line-height: 16px;
         display: flex;
         align-items: center;
-        padding: 28px 0;
+        padding: 22px 0;
         color: #FFFFFF;
       }
     }
@@ -75,7 +76,7 @@
 
       h5 {
         font-weight: 600;
-        font-size: 24px;
+        font-size: 25px;
         color: #FFFFFF;
         text-align: center;
         padding: 0 0 0  -10px;
@@ -85,18 +86,19 @@
       &__ema-group {
         display: flex;
         flex-direction: column;
-        padding: 6px 0;
+        padding: 9px 0;
 
         &--phone {
           display: flex;
           align-items: center;
           color: #FFFFFF;
+          font-size: 19px;
 
           &__tel {
             border-radius: 50%;
             background: #000;
-            font-size: 30px;
-            padding: 6px 6px;
+            font-size: 33px;
+            padding: 7px 7px;
             margin: 0 10px;
 
           }
@@ -108,11 +110,12 @@
           padding:  10px 0;
           display: flex;
           align-items: center;
+          font-size: 21px;
 
           &__gmail {
             border-radius: 50%;
             background: #000;
-            font-size: 30px;
+            font-size: 33px;
             padding: 7px 7px;
             margin: 0 10px;
           }
@@ -144,7 +147,7 @@
           font-weight: 400;
           font-size: 40px;
           color: #073fa4;
-          margin: 0 40px;
+          margin: 0 21%;
           border-radius: 50%;
           background: #FFFFFF;
           width: 40px;
@@ -179,12 +182,12 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      padding: 4px 0;
+      padding: 1px 0;
 
 
       h2 {
         font-weight: 600;
-        font-size: 24px;
+        font-size: 22px;
         font-family: 'Poppins', sans-serif;
         color: #FFFFFF;
         padding: 10px 0;
@@ -193,15 +196,15 @@
 
       p {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 20px;
         color: #FFFFFF;
-
+        padding: 10px 0;
       }
 
       &__map {
-        //padding: 10px 0;
+        padding: 18px 0;
         font-weight: 550;
-        font-size: 20px;
+        font-size: 21px;
         color: #FFFFFF;
 
         &__location {
@@ -214,76 +217,76 @@
 
   }
 
-  .burger-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #fff;
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 20px;
-
-    &__genres {
-
-      &--like {
-        font-size: 20px;
-      }
-
-      p {
-        font-size: 16px;
-        color: #000000;
-        font-weight: 400;
-      }
-    }
-
-    &__newB {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-
-      &--news {
-        font-size: 20px;
-      }
-
-      p {
-        font-size: 16px;
-        color: #000000;
-        font-weight: 400;
-      }
-    }
-
-    &__books {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-
-      &--book {
-        font-size: 20px;
-      }
-
-      p {
-        font-size: 16px;
-        color: #000000;
-        font-weight: 400;
-      }
-    }
-
-    &__about {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-
-      &--prof {
-        font-size: 20px;
-      }
-
-      p {
-        font-size: 16px;
-        color: #000000;
-        font-weight: 400;
-      }
-    }
-  }
+  //.burger-menu {
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: space-around;
+  //  background: #fff;
+  //  width: 100%;
+  //  padding: 10px 0;
+  //  border-radius: 20px;
+  //
+  //  &__genres {
+  //
+  //    &--like {
+  //      font-size: 20px;
+  //    }
+  //
+  //    p {
+  //      font-size: 16px;
+  //      color: #000000;
+  //      font-weight: 400;
+  //    }
+  //  }
+  //
+  //  &__newB {
+  //    display: flex;
+  //    align-items: center;
+  //    flex-direction: column;
+  //
+  //    &--news {
+  //      font-size: 20px;
+  //    }
+  //
+  //    p {
+  //      font-size: 16px;
+  //      color: #000000;
+  //      font-weight: 400;
+  //    }
+  //  }
+  //
+  //  &__books {
+  //    display: flex;
+  //    align-items: center;
+  //    flex-direction: column;
+  //
+  //    &--book {
+  //      font-size: 20px;
+  //    }
+  //
+  //    p {
+  //      font-size: 16px;
+  //      color: #000000;
+  //      font-weight: 400;
+  //    }
+  //  }
+  //
+  //  &__about {
+  //    display: flex;
+  //    align-items: center;
+  //    flex-direction: column;
+  //
+  //    &--prof {
+  //      font-size: 20px;
+  //    }
+  //
+  //    p {
+  //      font-size: 16px;
+  //      color: #000000;
+  //      font-weight: 400;
+  //    }
+  //  }
+  //}
 
 }
 
@@ -320,12 +323,7 @@
           input {
             width: 85%;
             height: 40px;
-            color: #fff;
             padding: 0 10px;
-            border: 0.5px solid #FFFFFF;
-            border-radius: 8px;
-            background: transparent;
-            outline: none;
           }
 
 
@@ -345,21 +343,18 @@
       &--address {
 
         padding: 4px 0;
-        margin: 0 -20px;
 
         h2 {
-          font-size: 17px;
-          //letter-spacing: -0.4px;
+          font-size: 20px;
         }
 
         p {
-          font-size: 15px;
+          font-size: 18px;
         }
 
         &__map {
-          padding: 5px 0;
-          font-size: 16px;
-          color: #FFFFFF;
+          font-size: 18px;
+          padding: 25px 0;
         }
 
 
@@ -368,12 +363,7 @@
       &--contact {
 
         h5 {
-          font-weight: 600;
-          font-size: 17px;
-          color: #FFFFFF;
-          text-align: center;
-          padding: 0 0 0  -10px;
-          //letter-spacing: -0.4px;
+
         }
 
         &__ema-group {
@@ -382,12 +372,12 @@
           padding: 6px 0;
 
           &--phone {
-            padding: 7px 15px;
+            padding: 7px 10px;
             font-size: 17px;
           }
 
           &--email {
-            padding: 8px 0;
+            padding: 8px 12px;
             font-size: 17px;
           }
         }
@@ -404,14 +394,11 @@
 
           &--facebook {
             font-size: 30px;
-            color: #073fa4;
-            //margin: 0 25px;
             border-radius: 50%;
             background: #FFFFFF;
             width: 30px;
             height: 30px;
           }
-
 
           &--twitter {
 
@@ -419,7 +406,7 @@
               padding: 5px 1px;
             }
 
-            margin: 0 10px;
+            margin: 0 1px;
             border-radius: 50%;
             width: 36px;
             height: 36px;
@@ -443,7 +430,7 @@
         width: 40%;
 
         h5 {
-          font-size: 26px;
+          font-size: 24px;
         }
 
         &__input {
@@ -458,7 +445,7 @@
 
 
           &--exit {
-            left: 70%;
+            left: 67%;
             font-size: 20px;
           }
 
@@ -472,18 +459,16 @@
         margin: 0 -20px;
 
         h2 {
-          font-size: 17px;
-          //letter-spacing: -0.4px;
+          font-size: 18px;
         }
 
         p {
-          font-size: 15px;
+          font-size: 18px;
         }
 
         &__map {
-          padding: 5px 0;
+          padding: 20px 0;
           font-size: 16px;
-          color: #FFFFFF;
         }
 
 
@@ -492,9 +477,7 @@
       &--contact {
 
         h5 {
-          font-size: 17px;
-          padding: 0 0 0  -10px;
-          //letter-spacing: -0.4px;
+          font-size: 18px;
         }
 
         &__ema-group {
@@ -503,12 +486,12 @@
           padding: 6px 0;
 
           &--phone {
-            padding: 7px 15px;
+            padding: 7px 10px;
             font-size: 17px;
           }
 
           &--email {
-            padding: 8px 0;
+            padding: 8px 10px;
             font-size: 17px;
           }
         }
@@ -517,18 +500,15 @@
         &__social {
 
           &--instagram {
-            border-radius: 30%;
-            width: 28px;
-            height: 28px;
+            //width: 28px;
+            //height: 28px;
             font-size: 28px;
           }
 
           &--facebook {
             font-size: 30px;
             color: #073fa4;
-            //margin: 0 25px;
-            border-radius: 50%;
-            background: #FFFFFF;
+            margin: 0 50px;
             width: 30px;
             height: 30px;
           }
@@ -558,7 +538,119 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
+  #footer {
+    .footer {
+
+      &--sign-up {
+        width: 40%;
+
+
+        &__input {
+          margin: 30px 0;
+          width: 85%;
+
+          input {
+            width: 85%;
+            height: 40px;
+            padding: 0 10px;
+          }
+
+
+          &--exit {
+            left: 67%;
+            font-size: 20px;
+            padding-bottom: 30px;
+          }
+
+        }
+
+      }
+
+      &--address {
+
+        padding: 1px 0;
+        margin: 0 -20px;
+
+
+        p {
+          padding: 4px 0;
+          font-size: 18px;
+        }
+
+        &__map {
+          padding: 15px 0;
+          font-size: 16px;
+        }
+
+
+      }
+
+      &--contact {
+
+        h5 {
+          font-size: 18px;
+        }
+
+        &__ema-group {
+          display: flex;
+          flex-direction: column;
+          padding: 6px 0;
+
+          &--phone {
+            padding: 7px 10px;
+            font-size: 17px;
+          }
+
+          &--email {
+            padding: 8px 10px;
+            font-size: 17px;
+          }
+        }
+
+
+        &__social {
+
+          &--instagram {
+            //width: 28px;
+            //height: 28px;
+            font-size: 28px;
+          }
+
+          &--facebook {
+            font-size: 30px;
+            color: #073fa4;
+            margin: 0 50px;
+            width: 30px;
+            height: 30px;
+          }
+
+
+          &--twitter {
+
+            &__icon {
+              padding: 5px 1px;
+            }
+
+            margin: 0 10px;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 26px;
+          }
+
+        }
+
+      }
+    }
+    .burger-menu {
+      display: block;
+
+    }
+  }
+}
+
+@media (max-width: 769px) {
   #footer {
     .footer {
 
@@ -570,31 +662,21 @@
         }
 
         &__input {
-          display: flex;
-          align-items: center;
-          position: relative;
           margin: 30px 0;
           width: 89%;
 
           input {
-            width: 85%;
+            width: 75%;
             height: 40px;
-            color: #fff;
             padding: 0 10px;
-            border: 0.5px solid #FFFFFF;
-            border-radius: 8px;
-            background: transparent;
-            outline: none;
           }
 
 
           &--exit {
             position: absolute;
-            //top: 10px;
-            left: 70%;
-            font-weight: 500;
-            font-size: 20px;
-            color: #fff;
+            //top: 5px;
+            left: 50%;
+            font-size: 10px;
           }
 
         }
@@ -606,15 +688,14 @@
 
         h2 {
           font-size: 16px;
-          //letter-spacing: -0.4px;
         }
 
         p {
-          font-size: 14px;
+          font-size: 16px;
         }
 
         &__map {
-          padding: 5px 0;
+          padding: 20px 0;
           font-size: 15px;
         }
       }
@@ -622,22 +703,15 @@
       &--contact {
 
         h5 {
-          font-weight: 600;
           font-size: 17px;
-          color: #FFFFFF;
-          text-align: center;
-          padding: 0 0 0  -10px;
-          //letter-spacing: -0.4px;
         }
 
         &__ema-group {
-          display: flex;
-          flex-direction: column;
           padding: 6px 0;
 
           &--phone {
-            padding: 7px 15px;
-            font-size: 15px;
+            padding: 7px 40px;
+            font-size: 16px;
           }
 
           &--email {
@@ -658,10 +732,7 @@
 
           &--facebook {
             font-size: 30px;
-            color: #073fa4;
-            //margin: 0 25px;
-            border-radius: 50%;
-            background: #FFFFFF;
+            margin: 0 20%;
             width: 30px;
             height: 30px;
           }
@@ -708,12 +779,7 @@
           input {
             width: 85%;
             height: 40px;
-            color: #fff;
             padding: 0 10px;
-            border: 0.5px solid #FFFFFF;
-            border-radius: 8px;
-            background: transparent;
-            outline: none;
           }
 
 
@@ -721,9 +787,7 @@
             position: absolute;
             //top: 10px;
             left: 70%;
-            font-weight: 500;
             font-size: 20px;
-            color: #fff;
           }
 
         }
@@ -734,8 +798,6 @@
         h2 {
           font-weight: 500;
           font-size: 16px;
-          color: #FFFFFF;
-          //letter-spacing: -0.4px;
         }
 
         p {
@@ -746,7 +808,6 @@
         &__map {
           padding: 8px 0;
           font-size: 14px;
-          color: #FFFFFF;
 
           &--location {
             display: none

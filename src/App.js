@@ -8,20 +8,21 @@ import About from "./pages/About/about";
 import Basket from "./pages/Basket/basket";
 import DetailPage from "./pages/Detail-page/Detail-page";
 import Hero from "./components/mainPage/Hero/hero";
+import Genres from "./pages/Genres/Genres";
 
 function App() {
     return (
         <>
-            {/*<Hero/>*/}
             <Routes>
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/categories' element={<Categories/>}/>
-                {/*<Route path='/books' element={<Books/>}/>*/}
-                {/*<Route path='/about' element={<About/>}/>*/}
+                <Route path={'/categories'} element={<Categories/>}/>
+                <Route path='/books' element={<Books/>}/>
                 <Route path='/basket' element={<Basket/>}/>
                 <Route path='/detail-page/:id' element={<DetailPage/>}/>
             </Routes>
             <Books/>
+            <Genres/>
             <Recent/>
             <About/>
         </>

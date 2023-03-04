@@ -1,0 +1,16 @@
+#books{
+  .books{
+    .up{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 5rem;
+      a{
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+    .down{
+      display: flex;
+    }
+  }
+}

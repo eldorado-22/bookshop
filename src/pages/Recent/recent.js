@@ -12,7 +12,7 @@ const Recent = () => {
         <section id="newBooks" style={{paddingTop: '130px', paddingBottom:'20px'}}>
             <div className="container">
                 <h1 style={{fontWeight:'500px', fontSize:'48px', textAlign:'center', color: '#19272E', paddingBottom:'50px'}}>New Books</h1>
-                <div className="newBooks" style={{}}>
+                <div className="newBooks">
                     <div className="newBooks--blocOne" style={{marginTop:'30px'}}>
                         <img src={image1} alt="logo"/>
                         <h3 style={{width:'185px', fontWeight:'700px', fontSize:'18px', color: '#19272E'}}>The Climate Book: The Facts and the Solutions</h3>

@@ -7,6 +7,7 @@ import Books from "./pages/Books/books";
 import About from "./pages/About/about";
 import Basket from "./pages/Basket/basket";
 import DetailPage from "./pages/Detail-page/Detail-page";
+import LocalStorage from "./pages/Basket/localStorage/localStorage";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
             </Routes>
             <Recent/>
             <About/>
+            <LocalStorage/>
         </>
     );
 }

@@ -21,26 +21,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/*<nav className="footer--home">*/}
-                    {/*    <NavLink to={'/'}>*/}
-                    {/*        <h5>Home</h5>*/}
-                    {/*    </NavLink>*/}
-                    {/*    <a href="#">Lorem</a>*/}
-                    {/*    <a href="#">Lorem</a>*/}
-                    {/*    <a href="#">Lorem</a>*/}
-                    {/*    <a href="#">Lorem</a>*/}
-                    {/*</nav>*/}
-
-                    {/*<nav className="footer--categories">*/}
-                    {/*    <NavLink to={'/categories'}>*/}
-                    {/*        <h5>Categories</h5>*/}
-                    {/*    </NavLink>*/}
-                    {/*    <a href="#">Lorem</a>*/}
-                    {/*    <a href="#">Lorem</a>*/}
-                    {/*    <a href="#">Lorem</a>*/}
-                    {/*    <a href="#">Lorem</a>*/}
-                    {/*</nav>*/}
-
                     <nav className="footer--contact">
                         <h5>Contact</h5>
                         <div className="footer--contact__ema-group">
@@ -83,26 +63,28 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="burger-menu">
-                <div className="footer--burger-menu__genres">
-                    <RiBookMarkFill className="footer--burger-menu__genres--like"/>
-                    <NavLink to={''}>
-                        <p>Genres</p>
-                    </NavLink>
-                </div>
-                <div className="footer--burger-menu__newB">
-                    <RiBook3Fill className="footer--burger-menu__newB--news"/>
-                    <p>New</p>
-                </div>
-                <div className="footer--burger-menu__books">
-                    <RiBookFill className="footer--burger-menu__books--book"/>
-                    <p>Books</p>
-                </div>
-                <div className="footer--burger-menu__about">
-                    <RiContactsBook2Fill className="footer--burger-menu__about--prof"/>
-                    <p>About</p>
-                </div>
-            </div>
+
+            {/*<div className="burger-menu">*/}
+                {/*<div className="footer--burger-menu__genres">*/}
+                {/*    <RiBookMarkFill className="footer--burger-menu__genres--like"/>*/}
+                {/*    <NavLink to={''}>*/}
+                {/*        <p>Genres</p>*/}
+                {/*    </NavLink>*/}
+                {/*</div>*/}
+                {/*<div className="footer--burger-menu__newB">*/}
+                {/*    <RiBook3Fill className="footer--burger-menu__newB--news"/>*/}
+                {/*    <p>New</p>*/}
+                {/*</div>*/}
+                {/*<div className="footer--burger-menu__books">*/}
+                {/*    <RiBookFill className="footer--burger-menu__books--book"/>*/}
+                {/*    <p>Books</p>*/}
+                {/*</div>*/}
+                {/*<div className="footer--burger-menu__about">*/}
+                {/*    <RiContactsBook2Fill className="footer--burger-menu__about--prof"/>*/}
+                {/*    <p>About</p>*/}
+                {/*</div>*/}
+            {/*</div>*/}
+
         </footer>
     );
 };

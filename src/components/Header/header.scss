@@ -71,13 +71,14 @@
           color: #807b7b;
         }
         &--icon{
-          font-size: 24px;
+          font-size: 20px;
           margin-left: 5px;
         }
       }
 
       &__basket {
-        font-size: 26px;
+        padding-top: 15px;
+        font-size: 22px;
         color: #000;
       }
     }
@@ -114,7 +115,7 @@
 
 
         &__basket {
-          padding-top: 2px;
+          padding-top: 10px;
           font-size: 24px;
         }
       }
@@ -134,6 +135,10 @@
 
       &--icons {
         margin: 0 -30px;
+
+        &__basket {
+          padding-top: 10px;
+        }
       }
     }
   }
@@ -148,31 +153,11 @@
       }
 
       &--icons {
-        margin: 0 -70px;
+        margin: 0 -30px;
       }
     }
   }
 }
-
-@media (max-width: 530px) {
-  #header {
-    .header {
-
-      &--icons {
-        margin: 0 -60px;
-
-        &__search {
-          font-size: 23px;
-        }
-
-        &__basket {
-          font-size: 25px;
-        }
-      }
-    }
-  }
-}
-
 
 @media (max-width: 475px) {
   #header {
@@ -182,13 +167,14 @@
       }
 
       &--icons {
-        margin: 0 -90px;
+        margin: 0 -30px;
 
         &__search {
           font-size: 21px;
         }
 
         &__basket {
+          padding-top: 10px;
           font-size: 23px;
         }
       }
@@ -204,7 +190,7 @@
       }
 
       &--icons {
-        margin: 0 -70px;
+        margin: 0 -30px;
 
         &__search {
           font-size: 20px;
@@ -226,14 +212,14 @@
       }
 
       &--icons {
-        margin: 0 -90px;
+        margin: 0 -30px;
 
         &__search {
           font-size: 20px;
         }
 
         &__basket {
-          padding-top: 4px;
+          padding-top: 18px;
           font-size: 20px;
         }
       }
@@ -248,7 +234,11 @@
         font-size: 19px;
       }
       &--icons {
-        margin: 0 -80px;
+        margin: 0 -30px;
+
+        &__basket {
+          padding-top: 15px;
+        }
       }
     }
   }

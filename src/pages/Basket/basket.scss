@@ -1,9 +1,18 @@
 #basket{
-  padding: 120px 0;
+  .text{
+    h1{
+      padding: 300px 0;
+      font-size: 58px;
+      color: #818EEA;
+      font-weight: 700;
+    }
+  }
+
   .basket{
     display: flex;
     align-items: start;
     justify-content: space-around;
+    padding: 120px 0;
     &--global{
       &__list{
         display: flex;
@@ -56,9 +65,20 @@
       }
     }
     &--order{
-      width: 405px;
-      height: 352px;
+      width: 410px;
+      &__xr{
+        border: 2px solid #818EEA;
+        padding: 20px;
+        width: 370px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+      }
       &__xs{
+        border: 2px solid #818EEA;
+        padding: 20px;
+        width: 370px;
+        border-radius: 8px;
+        margin-bottom: 40px;
         &--btn{
           padding: 10px 180px;
           background: #818EEA;
@@ -74,7 +94,7 @@
           display: flex;
           flex-direction: column;
         &__int{
-          width: 380px;
+          width: 350px;
           height: 40px;
           padding: 0 10px;
           margin-top: 10px;

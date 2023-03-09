@@ -20,4 +20,10 @@ a{
 
 button {
   cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.NavLink{
+  text-decoration: none;
 }

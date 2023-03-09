@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './basket.scss';
 import basketImg from '../../components/Product Image.png'
+import {BsArrowRight} from "react-icons/bs";
 import {IoIosArrowForward} from "react-icons/io";
 
 
@@ -82,8 +83,6 @@ const Basket = () => {
                                 <option>Pay with card</option>
                             </select>
                         </div>
-
-                        {/*================================================================================================================================================*/}
 
                         <div className="basket--order__pay">
                             <h4>Payment</h4>

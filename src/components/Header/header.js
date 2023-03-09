@@ -1,27 +1,26 @@
 import React, {useState} from 'react';
 import "./header.scss"
-import {BiShoppingBag} from "react-icons/bi";
+import {BiMenuAltRight, BiShoppingBag} from "react-icons/bi";
 import {FiSearch} from "react-icons/fi";
-// import {AiOutlineClose} from "react-icons/ai";
-import {CiSearch} from "react-icons/ci";
 import {NavLink} from "react-router-dom";
-// const cars = [ { name: 'Alfa Romeo'}];
+import BurgerMenu from "../BurgerMenu/burgerMenu";
+
 
 
 const Header = () => {
 
-    // const [search, setIsOpen] = useState('')
     const [search, setSearch] = useState(true)
-
+    const [burger, setBurger] = useState(false)
 
     return (
         <header id="header">
             <div className="container">
                 <div className="header">
-
                     <nav className="header--nav">
                         <NavLink to={'/'}>
-                            <h1>Bookshop</h1>
+                            <h1 style={{
+                                textDecoration: 'none'
+                            }}>Bookshop</h1>
                         </NavLink>
                         <nav className="header--nav__col">
                             <NavLink to={'categories'}>
@@ -41,11 +40,11 @@ const Header = () => {
 
                     <nav className="header--icons">
                         <div style={{
-                            background: search? 'transparent': ''
+                            background: search ? 'transparent' : ''
                         }} className='header--icons__search'>
-                            <FiSearch onClick={()=> setSearch(!search)} className="header--icons__search--icon"/>
+                            <FiSearch onClick={() => setSearch(!search)} className="header--icons__search--icon"/>
                             <input style={{
-                                width: search? '' : '120px'
+                                width: search ? '' : '120px'
                             }} text="text"/>
                         </div>
 
@@ -53,9 +52,12 @@ const Header = () => {
                             <BiShoppingBag className="header--icons__basket"/>
                         </NavLink>
                     </nav>
+                    <BiMenuAltRight className='header--nav__icon' onClick={() => setBurger(true)}/>
 
+                    <BurgerMenu burger={burger} setBurger={setBurger}/>
                 </div>
             </div>
+
         </header>
     );
 };

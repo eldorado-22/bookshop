@@ -16,15 +16,11 @@ function App() {
             <Routes>
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/categories' element={<Categories/>}/>
-                <Route path={'/categories'} element={<Categories/>}/>
-                <Route path='/books' element={<Books/>}/>
+                {/*<Route path={'/categories'} element={<Categories/>}/>*/}
+                {/*<Route path='/books' element={<Books/>}/>*/}
                 <Route path='/basket' element={<Basket/>}/>
                 <Route path='/detail-page/:id' element={<DetailPage/>}/>
             </Routes>
-            <Books/>
-            <Genres/>
-            <Recent/>
-            <About/>
         </>
     );
 }

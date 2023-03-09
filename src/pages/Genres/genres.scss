@@ -4,6 +4,7 @@
     .up{
       display: flex;
       justify-content: space-between;
+
       a{
         align-items: flex-end;
         display: flex;
@@ -12,7 +13,11 @@
     .down{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       padding-top: 5rem;
+      img{
+        margin: 10px 0;
+      }
     }
     .down-mob{
       display: none;
@@ -24,7 +29,15 @@
 
 @media (max-width: 1024px) {}
 
-@media (max-width: 900px) {}
+@media (max-width: 992px) {
+  #genres{
+    .genres{
+      .down{
+
+      }
+    }
+  }
+}
 
 @media (max-width: 630px) {}
 

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './basket.scss';
 import basketImg from '../../components/Product Image.png'
-import localStorage from "./localStorage/localStorage";
 import {BsArrowRight} from "react-icons/bs";
 
 
@@ -81,8 +80,6 @@ const Basket = () => {
                                        placeholder="Write phone number   " type="number"/>
                             </div>
                         </div>
-
-                        {/*================================================================================================================================================*/}
 
                         <div className="basket--order__pay">
                             <h4>Payment</h4>

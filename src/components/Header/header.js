@@ -49,7 +49,11 @@ const Header = () => {
                         </div>
 
                         <NavLink to={'/basket'}>
-                            <BiShoppingBag className="header--icons__basket"/>
+                            <BiShoppingBag style={{
+                                paddingTop: '1px',
+                                paddingBottom: '4px',
+                                fontSize: '25px'
+                            }} className="header--icons__basket"/>
                         </NavLink>
                     </nav>
                     <BiMenuAltRight className='header--nav__icon' onClick={() => setBurger(true)}/>

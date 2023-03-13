@@ -42,14 +42,14 @@
           color: #e0d9d9;
         }
 
-        &--exit {
-          position: absolute;
-          top: -10px;
-          left: 75%;
-          font-weight: 500;
-          font-size: 20px;
-          color: #fff;
-        }
+        //&--exit {
+        //  position: absolute;
+        //  top: -10px;
+        //  left: 75%;
+        //  font-weight: 500;
+        //  font-size: 20px;
+        //  color: #fff;
+        //}
 
       }
 
@@ -107,7 +107,7 @@
 
         &--email {
           color: #FFFFFF;
-          padding:  10px 0;
+          padding: 10px 0;
           display: flex;
           align-items: center;
           font-size: 21px;
@@ -117,7 +117,7 @@
             background: #000;
             font-size: 33px;
             padding: 7px 7px;
-            margin: 0 10px;
+            margin: 20px 10px;
           }
         }
       }
@@ -164,6 +164,7 @@
           &__icon {
             padding: 5px 5px;
           }
+
           margin: 0 10px;
           background: #0d67be;
           border-radius: 50%;
@@ -184,14 +185,12 @@
       flex-direction: column;
       padding: 1px 0;
 
-
       h2 {
         font-weight: 600;
         font-size: 22px;
         font-family: 'Poppins', sans-serif;
         color: #FFFFFF;
         padding: 10px 0;
-        //letter-spacing: -0.4px;
       }
 
       p {
@@ -202,10 +201,13 @@
       }
 
       &__map {
-        padding: 18px 0;
         font-weight: 550;
         font-size: 21px;
         color: #FFFFFF;
+
+        a {
+          padding: 20px 0;
+        }
 
         &__location {
           font-size: 30px;
@@ -356,7 +358,7 @@
     .footer {
 
       &--sign-up {
-        width: 40%;
+        width: 30%;
 
         h5 {
           font-size: 24px;
@@ -366,16 +368,19 @@
           margin: 30px 0;
           width: 89%;
 
+
+
           input {
-            width: 85%;
+            width: 80%;
             height: 40px;
             padding: 0 10px;
           }
 
 
           &--exit {
-            left: 67%;
-            font-size: 20px;
+            display: none;
+            left: 30%;
+            font-size: 14px;
           }
 
         }
@@ -383,9 +388,9 @@
       }
 
       &--address {
-
         padding: 4px 0;
         margin: 0 -20px;
+
 
         h2 {
           font-size: 18px;
@@ -460,6 +465,7 @@
 
       }
     }
+
     .burger-menu {
       display: block;
 
@@ -572,6 +578,7 @@
 
       }
     }
+
     .burger-menu {
       display: block;
 

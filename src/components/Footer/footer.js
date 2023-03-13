@@ -1,23 +1,21 @@
 import React from 'react';
 import './footer.scss';
-import {NavLink} from "react-router-dom";
+// import {NavLink} from "react-router-dom";
 import {BsFacebook, BsFillTelephoneFill, BsInstagram, BsTwitter} from "react-icons/bs";
 import {SiGmail} from "react-icons/si";
 import {BiMap} from "react-icons/bi";
-import {RiBook3Fill, RiBookFill, RiBookMarkFill, RiContactsBook2Fill} from "react-icons/ri";
+// import {RiBook3Fill, RiBookFill, RiBookMarkFill, RiContactsBook2Fill} from "react-icons/ri";
 
 const Footer = () => {
     return (
         <footer id="footer">
             <div className="container">
                 <div className="footer">
-
                     <div className="footer--sign-up">
                         <h5>Sign up for our newsletter</h5>
-                        {/*<p>Be the first to know about our special offers, news, and updates.</p>*/}
                         <div className="footer--sign-up__input">
                             <input text="text" placeholder="Email Address"/>
-                            <p className="footer--sign-up__input--exit">Sign Up</p>
+                            {/*<p className="footer--sign-up__input--exit">Sign Up</p>*/}
                         </div>
                     </div>
 
@@ -28,26 +26,25 @@ const Footer = () => {
                                 <BsFillTelephoneFill className="footer--contact__ema-group--phone__tel"/>
                                 +(996) 777 777 777
                             </a>
-                            <a href="email" className="footer--contact__ema-group--email">
+                            <a href="Email.js" className="footer--contact__ema-group--email">
                                 <SiGmail className="footer--contact__ema-group--email__gmail"/>
                                 motionweb@gmail.com
                             </a>
                         </div>
 
-                        <div className="footer--contact__social">
-                            <a href="https://www.instagram.com/motion_web/"
-                               className="footer--contact__social--instagram">
-                                <BsInstagram className="footer--contact__social--instagram__icon"/>
-                            </a>
-                            <a href="https://www.facebook.com/"
-                               className="footer--contact__social--facebook">
-                                <BsFacebook className="footer--contact__social--facebook__icon"/>
-                            </a>
-                            <a href="https://www.twitter.com/" className="footer--contact__social--twitter">
-                                <BsTwitter className="footer--contact__social--twitter__icon"/>
-                            </a>
-                        </div>
-
+                        {/*<div className="footer--contact__social">*/}
+                        {/*    <a href="https://www.instagram.com/motion_web/"*/}
+                        {/*       className="footer--contact__social--instagram">*/}
+                        {/*        <BsInstagram className="footer--contact__social--instagram__icon"/>*/}
+                        {/*    </a>*/}
+                        {/*    <a href="https://www.facebook.com/"*/}
+                        {/*       className="footer--contact__social--facebook">*/}
+                        {/*        <BsFacebook className="footer--contact__social--facebook__icon"/>*/}
+                        {/*    </a>*/}
+                        {/*    <a href="https://www.twitter.com/" className="footer--contact__social--twitter">*/}
+                        {/*        <BsTwitter className="footer--contact__social--twitter__icon"/>*/}
+                        {/*    </a>*/}
+                        {/*</div>*/}
                     </nav>
 
                     <nav className="footer--address">
@@ -59,7 +56,6 @@ const Footer = () => {
                             Turusbekov: 109/3
                         </a>
                     </nav>
-
 
                 </div>
             </div>

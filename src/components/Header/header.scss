@@ -17,6 +17,12 @@
       align-items: center;
       padding-right: 50px;
 
+      &__icon{
+        font-size: 40px;
+        color: rgb(12, 110, 222);
+        cursor: pointer;
+      }
+
       h1 {
         font-weight: 700;
         font-size: 22px;
@@ -33,6 +39,7 @@
           letter-spacing: -0.6px;
           color: #19272E;
           padding: 0 10px;
+          text-decoration: none;
 
           &:hover {
             color: #818EEA;
@@ -40,15 +47,13 @@
           }
         }
       }
-
-
     }
 
     &--icons {
       display: flex;
       justify-content: end;
       align-items: center;
-      width: 190px;
+      width: 40%;
       color: black;
 
       &__search {
@@ -59,6 +64,8 @@
         align-items: center;
         border-radius: 10px;
         transition: .5s;
+        cursor: pointer;
+
 
         input{
           width: 0;
@@ -77,7 +84,6 @@
       }
 
       &__basket {
-        padding-top: 15px;
         font-size: 22px;
         color: #000;
       }
@@ -85,11 +91,70 @@
   }
 }
 
-@media (max-width: 1440px) {
-  //.container {
-  //  width: 90%;
-  //}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  z-index: 100;
+  transition: 1s;
+
+
+  .burgerMenu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(90deg, rgba(6, 56, 112, 0.83) 0%, rgba(11, 76, 218, 0.88) 100%);
+    color: white;
+
+    &--group {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      padding: 30px 0;
+      position: absolute;
+      top: 0;
+
+      h1 {
+        font-weight: 700;
+        font-size: 50px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      &__icon {
+        font-size: 50px;
+        color: #fff;
+        cursor: pointer;
+        width: 4500%;
+      }
+    }
+
+    &--block {
+      margin: 40px 0;
+      display: flex;
+      color: white;
+      font-size: 80px;
+
+      h3{
+        text-decoration: none;
+      }
+    }
+  }
 }
+
+
+@media (min-width: 3000px) {
+.menu{
+  display: none;
+}
+}
+
 
 @media (max-width: 1024px) {
   #header {
@@ -98,9 +163,13 @@
       &--nav {
         width: 30px;
 
+        &__icon{
+          display: block;
+        }
+
         h1 {
           font-size: 24px;
-          margin: 0 -20px;
+          padding: 0 -30px;
 
         }
 
@@ -112,14 +181,16 @@
       &--icons {
         display: flex;
         align-items: center;
-
+        padding-left: 82%;
 
         &__basket {
-          padding-top: 10px;
           font-size: 24px;
         }
       }
     }
+  }
+  .menu{
+    display: block;
   }
 }
 
@@ -135,10 +206,6 @@
 
       &--icons {
         margin: 0 -30px;
-
-        &__basket {
-          padding-top: 10px;
-        }
       }
     }
   }
@@ -152,8 +219,10 @@
         margin: 0 -29px;
       }
 
+
       &--icons {
         margin: 0 -30px;
+        padding-left: 75%;
       }
     }
   }
@@ -174,7 +243,6 @@
         }
 
         &__basket {
-          padding-top: 10px;
           font-size: 23px;
         }
       }
@@ -219,7 +287,6 @@
         }
 
         &__basket {
-          padding-top: 18px;
           font-size: 20px;
         }
       }
@@ -236,9 +303,6 @@
       &--icons {
         margin: 0 -30px;
 
-        &__basket {
-          padding-top: 15px;
-        }
       }
     }
   }

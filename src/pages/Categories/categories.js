@@ -1,7 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './categories.scss';
+import axios from "axios";
+
 const Categories = () => {
+    const [book, setBook] = useState([])
+    const getBooks = async () => {
+        const url = await axios.get(`https://bookshopmotion.herokuapp.com/product/books`)
+        const {data} = await url
+        setBook(data)
+    }
+    console.log(book)
+    useEffect(() => {
+        getBooks()
+    }, [])
     return (
+
         <div id='categories'>
             <div className="container">
                 <div className="categories">
@@ -30,7 +43,7 @@ const Categories = () => {
                         <div className="content2"><h5 style={{
                             fontWeight: '700',
                             fontSize: '16px',
-                            padding:'20px 0'
+                            padding: '20px 0'
                         }}>Genres</h5></div>
                         <div className="content3">
                             <div className="left">
@@ -96,7 +109,15 @@ const Categories = () => {
                                 </div>
 
                             </div>
-                            <div className="right"></div>
+                            <div className="right">
+                                {/*{*/}
+                                {/*    book.map(el=>(*/}
+                                {/*        <div>*/}
+                                {/*            /!*<h1>{el.results.name}</h1>*!/*/}
+                                {/*        </div>*/}
+                                {/*    ))*/}
+                                {/*}*/}
+                            </div>
                         </div>
                     </div>
                 </div>

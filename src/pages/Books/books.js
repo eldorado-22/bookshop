@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './books.scss';
 import {NavLink} from "react-router-dom";
-import Slider from 'react-slick'
-import axios from "axios";
 
 const settings = {
     dots: true,
@@ -42,16 +40,6 @@ const settings = {
 
 
 const Books = () => {
-    // const [books, setBooks] = useState([])
-    //
-    // useEffect(() => {
-    //     axios("https://motionbookshop2.herokuapp.com/?format=openapi")
-    //         .then(({data})=>{
-    //             console.log(data)
-    //             setBooks(data)
-    //         })
-    //
-    // })
 
     return (
         <div id="books">
@@ -62,17 +50,7 @@ const Books = () => {
                         <NavLink to={'/'}>View all</NavLink>
                     </div>
                     <div className="down">
-                        {/*<Slider {...settings}>*/}
-                        {/*    {*/}
-                        {/*        books.map(el=>(*/}
-                        {/*            <div className='books-cart'>*/}
-                        {/*                <img src={el.image} alt="img"/>*/}
-                        {/*                <h3>{el.name}</h3>*/}
-                        {/*                <p>{el.desc}</p>*/}
-                        {/*            </div>*/}
-                        {/*        ))*/}
-                        {/*    }*/}
-                        {/*</Slider>*/}
+
                     </div>
                 </div>
             </div>

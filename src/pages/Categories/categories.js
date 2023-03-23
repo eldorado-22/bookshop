@@ -13,8 +13,9 @@ const Categories = () => {
     useEffect(() => {
         getBooks()
     }, [])
-    return (
 
+    console.log(book)
+    return (
         <div id='categories'>
             <div className="container">
                 <div className="categories">
@@ -110,13 +111,22 @@ const Categories = () => {
 
                             </div>
                             <div className="right">
-                                {/*{*/}
-                                {/*    book.map(el=>(*/}
-                                {/*        <div>*/}
-                                {/*            /!*<h1>{el.results.name}</h1>*!/*/}
-                                {/*        </div>*/}
-                                {/*    ))*/}
-                                {/*}*/}
+                                {
+                                    book.map(el => (
+                                        <div className='cart'>
+                                            <div className="block">
+                                                <img src={el.image} style={{
+                                                    width: '200px',
+                                                    height: '300px',
+                                                    borderRadius: "8px"
+                                                }} alt=""/>
+                                                <h1>{el.name}</h1>
+                                                <h5>Aleksandr Makadonski</h5>
+                                            </div>
+                                        </div>
+
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>

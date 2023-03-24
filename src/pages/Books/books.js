@@ -50,7 +50,7 @@ const Books = () => {
                         <NavLink to={'/'}>View all</NavLink>
                     </div>
                     <div className="down">
-
+                        <h1>hello</h1>
                     </div>
                 </div>
             </div>

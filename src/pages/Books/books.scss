@@ -1,16 +1,53 @@
-#books{
-  .books{
-    .up{
+#books {
+  .books {
+    .up {
       display: flex;
       justify-content: space-between;
       padding-top: 5rem;
-      a{
+
+      a {
         display: flex;
         align-items: flex-end;
       }
     }
-    .down{
+
+    .down {
+      padding-top: 3rem;
       display: flex;
+      width: 100%;
+      height: 430px;
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: none;
+        border-radius: 5px;
+      }
+
+      .cart {
+        margin: 0 40px 40px 40px;
+
+        .block {
+          height: 25rem;
+          width: 10rem;
+        }
+
+        h1 {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 120%;
+          color: #19272E;
+        }
+
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #19272E;
+        }
+      }
     }
   }
 }

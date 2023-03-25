@@ -9,12 +9,10 @@ const Categories = () => {
         const {data} = await url
         setBook(data)
     }
-    console.log(book)
     useEffect(() => {
         getBooks()
     }, [])
 
-    console.log(book)
     return (
         <div id='categories'>
             <div className="container">

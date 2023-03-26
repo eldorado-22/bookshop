@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './basket.scss';
 import basketImg from '../../components/Product Image.png'
+// import localStorage from "./localStorage/localStorage";
 import {BsArrowRight} from "react-icons/bs";
 import {IoIosArrowForward} from "react-icons/io";
 

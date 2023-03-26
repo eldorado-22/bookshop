@@ -106,8 +106,29 @@
           }
         }
         .right{
-          border: 2px solid #818EEA;
           width: 100%;
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          .cart{
+            margin: 0 40px 40px 40px;
+            .block{
+              height: 25rem;
+              width: 10rem;
+            }
+            h1{
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 120%;
+              color: #19272E;
+            }
+            h5{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              color: #19272E;
+            }
+          }
         }
       }
     }

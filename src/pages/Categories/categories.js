@@ -1,6 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './categories.scss';
+import axios from "axios";
+
 const Categories = () => {
+    const [book, setBook] = useState([])
+    const getBooks = async () => {
+        const url = await axios.get(`https://bookshopmotion.herokuapp.com/product/books`)
+        const {data} = await url
+        setBook(data)
+    }
+    useEffect(() => {
+        getBooks()
+    }, [])
+
     return (
         <div id='categories'>
             <div className="container">
@@ -30,7 +42,7 @@ const Categories = () => {
                         <div className="content2"><h5 style={{
                             fontWeight: '700',
                             fontSize: '16px',
-                            padding:'20px 0'
+                            padding: '20px 0'
                         }}>Genres</h5></div>
                         <div className="content3">
                             <div className="left">
@@ -96,7 +108,24 @@ const Categories = () => {
                                 </div>
 
                             </div>
-                            <div className="right"></div>
+                            <div className="right">
+                                {
+                                    book.map(el => (
+                                        <div className='cart'>
+                                            <div className="block">
+                                                <img src={el.image} style={{
+                                                    width: '200px',
+                                                    height: '300px',
+                                                    borderRadius: "8px"
+                                                }} alt=""/>
+                                                <h1>{el.name}</h1>
+                                                <h5>Aleksandr Makadonski</h5>
+                                            </div>
+                                        </div>
+
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>

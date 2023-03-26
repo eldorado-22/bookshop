@@ -32,16 +32,78 @@
 @media (max-width: 992px) {
   #genres{
     .genres{
+      a{
+        padding: 10px;
+        margin: 0;
+      }
       .down{
+        display: none;
+      }
+      .down-mob{
+        display: flex;
+        width: 100%;
+        height: 430px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
 
+        &::-webkit-scrollbar-thumb {
+          background: none;
+          border-radius: 5px;
+        }
       }
     }
   }
 }
 
-@media (max-width: 630px) {}
+@media (max-width: 630px) {
+  #genres{
+    .genres{
+      .down{
+        display: none;
+      }
+      .down-mob{
+        display: flex;
+        width: 100%;
+        height: 430px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
 
-@media (max-width: 530px) {}
+        &::-webkit-scrollbar-thumb {
+          background: none;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  #genres{
+    .genres{
+      .down{
+        display: none;
+      }
+      .down-mob{
+        display: flex;
+        width: 100%;
+        height: 430px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: none;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
 
 
 @media (max-width: 475px) {
@@ -52,13 +114,68 @@
       }
       .down-mob{
         display: flex;
+        width: 100%;
+        height: 430px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: none;
+          border-radius: 5px;
+        }
       }
     }
   }
 }
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  #genres{
+    .genres{
+      .down{
+        display: none;
+      }
+      .down-mob{
+        display: flex;
+        width: 100%;
+        height: 430px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: none;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 340px) {}
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+  #genres{
+    .genres{
+      .down{
+        display: none;
+      }
+      .down-mob{
+        display: flex;
+        width: 100%;
+        height: 430px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: none;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

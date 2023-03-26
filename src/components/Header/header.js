@@ -18,9 +18,7 @@ const Header = () => {
                 <div className="header">
                     <nav className="header--nav">
                         <NavLink to={'/'}>
-                            <h1 style={{
-                                textDecoration: 'none'
-                            }}>Bookshop</h1>
+                            <h1>Bookshop</h1>
                         </NavLink>
                         <nav className="header--nav__col">
                             <NavLink to={'categories'}>

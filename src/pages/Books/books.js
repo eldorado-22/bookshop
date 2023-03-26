@@ -39,20 +39,26 @@ const settings = {
     ]
 };
 
-
+// AIzaSyD9GZ2jDqvbYKavrV6dJw1B1rcTcR9OLe0
 
 const Books = () => {
-    // const [books, setBooks] = useState([])
-    //
-    // useEffect(() => {
-    //     axios("https://motionbookshop2.herokuapp.com/?format=openapi")
-    //         .then(({data})=>{
-    //             console.log(data)
-    //             setBooks(data)
-    //         })
-    //
-    // })
+    const [books, setBooks] = useState([])
 
+    const getBooks=async ()=> {
+        try {
+            const res = await axios(`GET https://www.googleapis.com/books/v1/volumes?q=flowers&orderBy=newest&key=AIzaSyD9GZ2jDqvbYKavrV6dJw1B1rcTcR9OLe0`)
+           const {data} = await res
+           await setBooks(data)
+        }catch (e){
+            console.log(e, 'error')
+        }
+    }
+
+    useEffect(() => {
+      getBooks()
+    }, [])
+
+    console.log(books)
     return (
         <div id="books">
             <div className="container">
@@ -62,17 +68,17 @@ const Books = () => {
                         <NavLink to={'/'}>View all</NavLink>
                     </div>
                     <div className="down">
-                        {/*<Slider {...settings}>*/}
-                        {/*    {*/}
-                        {/*        books.map(el=>(*/}
-                        {/*            <div className='books-cart'>*/}
-                        {/*                <img src={el.image} alt="img"/>*/}
-                        {/*                <h3>{el.name}</h3>*/}
-                        {/*                <p>{el.desc}</p>*/}
-                        {/*            </div>*/}
-                        {/*        ))*/}
-                        {/*    }*/}
-                        {/*</Slider>*/}
+                        <Slider {...settings}>
+                            {
+                                books.map(el=>(
+                                    <div className='books-cart'>
+                                        <img src={el.image} alt="img"/>
+                                        <h3>{el.name}</h3>
+                                        <p>{el.desc}</p>
+                                    </div>
+                                ))
+                            }
+                        </Slider>
                     </div>
                 </div>
             </div>

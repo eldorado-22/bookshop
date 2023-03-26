@@ -10,7 +10,7 @@ const BurgerMenu = ({burger, setBurger}) => {
             <div className="burgerMenu">
                 <div className="burgerMenu--group">
                     <h1 onClick={() => setBurger(!burger)}>BookShop</h1>
-                    <NavLink to={"/"}>
+                    <NavLink to={""}>
                         <AiOutlineClose className='burgerMenu--group__icon' onClick={() => setBurger(!burger)}/>
                     </NavLink>
                 </div>

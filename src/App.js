@@ -18,7 +18,8 @@ function App() {
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/categories' element={<Categories/>}/>
                 <Route path='/basket' element={<Basket/>}/>
-                <Route path='/detail-page/:id' element={<DetailPage/>}/>
+                <Route path='/detail-page/:bookId' element={<DetailPage/>}/>
+                <Route path='/about' element={<About/>}/>
             </Routes>
         </>
     );

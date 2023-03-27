@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './categories.scss';
 import axios from "axios";
+import {NavLink} from "react-router-dom";
+import DetailPage from "../Detail-page/Detail-page";
 
 const Categories = () => {
     const [book, setBook] = useState([])
@@ -33,7 +35,7 @@ const Categories = () => {
                                 <h5>Sort By</h5>
                                 <select name="Book" id="">
                                     <option value="s1" selected>Popular</option>
-                                    <option value="s2">Book</option>
+                                    <option className="holo" value="s2">Book</option>
                                     <option value="s3">Book</option>
                                     <option value="s4">Book</option>
                                 </select>
@@ -113,19 +115,22 @@ const Categories = () => {
                                     book.map(el => (
                                         <div className='cart'>
                                             <div className="block">
-                                                <img src={el.image} style={{
-                                                    width: '200px',
-                                                    height: '300px',
-                                                    borderRadius: "8px"
-                                                }} alt=""/>
+                                                <NavLink to={`/detail-page/${el.id}`}>
+                                                    <img src={el.image} style={{
+                                                        width: '200px',
+                                                        height: '300px',
+                                                        borderRadius: "8px"
+                                                    }} alt=""/>
+                                                </NavLink>
                                                 <h1>{el.name}</h1>
                                                 <h5>Aleksandr Makadonski</h5>
                                             </div>
+                                            <DetailPage el={el}/>
                                         </div>
-
                                     ))
                                 }
                             </div>
+
                         </div>
                     </div>
                 </div>

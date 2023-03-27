@@ -30,7 +30,7 @@ const Books = () => {
                         {
                             book.slice(0, 15).map(el => (
                                 <div className='cart'>
-                                     <div className="block">
+                                    <div className="block">
                                         <img src={el.image} style={{
                                             width: '200px',
                                             height: '300px',
